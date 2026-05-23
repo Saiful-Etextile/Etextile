@@ -373,19 +373,19 @@ nav a.active::after {
     margin-bottom: 1rem;
 }
 
-/* ==================== THREE PILLARS ==================== */
-.pillars-section {
+/* ==================== WHAT I DO ==================== */
+.what-i-do-section {
     background: var(--light-gray);
 }
 
-.pillars-grid {
+.what-i-do-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
 }
 
-.pillar-card {
+.what-i-do-card {
     background: var(--white);
     border-radius: 15px;
     padding: 2.5rem 2rem;
@@ -393,10 +393,9 @@ nav a.active::after {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
-    border-top: 4px solid transparent;
 }
 
-.pillar-card::before {
+.what-i-do-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -404,91 +403,81 @@ nav a.active::after {
     right: 0;
     height: 4px;
     background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: var(--transition);
 }
 
-.pillar-card:hover {
-    transform: translateY(-8px);
+.what-i-do-card:hover {
+    transform: translateY(-6px);
     box-shadow: var(--shadow-md);
 }
 
-.pillar-card:hover::before {
-    transform: scaleX(1);
-}
-
-.pillar-icon {
-    width: 70px;
-    height: 70px;
+.what-i-do-icon {
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, var(--light-blue), rgba(76, 175, 80, 0.15));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
     transition: var(--transition);
 }
 
-.pillar-card:hover .pillar-icon {
+.what-i-do-card:hover .what-i-do-icon {
     background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
     transform: scale(1.1);
 }
 
-.pillar-card h3 {
-    font-size: 1.3rem;
+.what-i-do-card h3 {
+    font-size: 1.25rem;
     color: var(--dark-blue);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
-.pillar-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.pillar-list li {
+.what-i-do-card p {
     font-size: 0.95rem;
     color: #555;
     line-height: 1.7;
-    margin-bottom: 1rem;
-    padding-left: 1.2rem;
+}
+
+.what-i-do-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 0;
+}
+
+.what-i-do-card ul li {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    padding: 0.3rem 0 0.3rem 1.2rem;
     position: relative;
 }
 
-.pillar-list li:last-child {
-    margin-bottom: 0;
-}
-
-.pillar-list li::before {
+.what-i-do-card ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0.6rem;
-    width: 6px;
-    height: 6px;
+    top: 0.65rem;
+    width: 5px;
+    height: 5px;
     background: var(--accent-blue);
     border-radius: 50%;
 }
 
-.pillar-list li strong {
-    color: var(--dark-blue);
-}
-
-/* ==================== TECHNICAL ARSENAL ==================== */
-.arsenal-section {
+/* ==================== CURRENT EXPERTISE ==================== */
+.expertise-section {
     background: var(--white);
 }
 
-.arsenal-grid {
+.expertise-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
     margin-top: 3rem;
 }
 
-.arsenal-category {
+.expertise-category {
     background: linear-gradient(135deg, var(--light-blue), rgba(255, 255, 255, 0.5));
     border: 2px solid var(--border-gray);
     border-radius: 15px;
@@ -496,38 +485,38 @@ nav a.active::after {
     transition: var(--transition);
 }
 
-.arsenal-category:hover {
+.expertise-category:hover {
     border-color: var(--accent-blue);
     box-shadow: var(--shadow-sm);
 }
 
-.arsenal-category h3 {
-    font-size: 1.2rem;
+.expertise-category h3 {
+    font-size: 1.15rem;
     color: var(--dark-blue);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent-blue);
     display: inline-block;
 }
 
-.skill-tags {
+.expertise-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
 }
 
-.skill-tag {
+.expertise-tag {
     background: var(--white);
     color: var(--primary-blue);
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
     border: 1px solid var(--border-gray);
     transition: var(--transition);
 }
 
-.skill-tag:hover {
+.expertise-tag:hover {
     background: var(--primary-blue);
     color: var(--white);
     border-color: var(--primary-blue);
@@ -536,7 +525,7 @@ nav a.active::after {
 
 /* ==================== RESPONSIVE ABOUT ==================== */
 @media (max-width: 1024px) {
-    .pillars-grid {
+    .what-i-do-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -580,11 +569,11 @@ nav a.active::after {
         font-size: 1.1rem;
     }
 
-    .arsenal-grid {
+    .expertise-grid {
         grid-template-columns: 1fr;
     }
 
-    .pillar-card {
+    .what-i-do-card {
         padding: 2rem 1.5rem;
     }
 }
