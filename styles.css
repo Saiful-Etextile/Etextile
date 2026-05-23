@@ -284,7 +284,7 @@ nav a.active::after {
 }
 
 .about-hero-stats .stat-number {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 0.2rem;
@@ -295,7 +295,7 @@ nav a.active::after {
 }
 
 .about-hero-stats .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -779,51 +779,6 @@ nav a.active::after {
     line-height: 1.6;
 }
 
-/* ==================== PUBLICATIONS SECTION ==================== */
-.publications-section {
-    background: var(--white);
-}
-
-.publications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.pub-card {
-    background: linear-gradient(135deg, var(--light-blue), rgba(255, 255, 255, 0.5));
-    border: 2px solid var(--border-gray);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.pub-card:hover {
-    border-color: var(--primary-blue);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-5px);
-}
-
-.pub-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.pub-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-    color: var(--dark-blue);
-    line-height: 1.4;
-}
-
-.pub-journal {
-    color: #666;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
 /* ==================== CONTACT SECTION ==================== */
 .contact {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
@@ -1181,7 +1136,7 @@ footer {
 
 .stat-number {
     display: block;
-    font-size: 2.4rem;
+    font-size: 2.7rem;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 0.3rem;
@@ -1192,7 +1147,7 @@ footer {
 }
 
 .stat-label {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -1202,9 +1157,9 @@ footer {
 /* ==================== MEDIA TAGS ==================== */
 .media-tag {
     display: inline-block;
-    padding: 0.3rem 0.9rem;
+    padding: 0.35rem 1rem;
     border-radius: 50px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -1481,6 +1436,397 @@ footer {
 
     .stat-label {
         font-size: 0.75rem;
+    }
+}
+
+/* ==================== PUBLICATIONS HERO ==================== */
+.publication-hero {
+    margin-top: 70px;
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #0d4a30 50%, var(--accent-blue) 100%);
+    overflow: hidden;
+    padding: 5rem 2rem;
+}
+
+.publication-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(76, 175, 128, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.publication-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px);
+    pointer-events: none;
+}
+
+.publication-hero-content {
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    max-width: 800px;
+    z-index: 1;
+    animation: slideInUp 0.6s ease-out;
+}
+
+.pub-hero-badge {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.publication-hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.publication-hero-content > p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 650px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.7;
+}
+
+.pub-section {
+    background: var(--light-gray);
+    padding-bottom: 1.5rem;
+}
+
+/* ==================== PUBLICATION CARDS ==================== */
+.pub-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+
+.pub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.pub-card:nth-of-type(even) {
+    grid-template-columns: 1fr 320px;
+}
+
+.pub-card:nth-of-type(even) .pub-card-img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pub-card:nth-of-type(even) .pub-card-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.pub-card-img {
+    height: 100%;
+    min-height: 260px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, var(--light-blue), rgba(76, 175, 80, 0.1));
+}
+
+.pub-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+    background: var(--light-blue);
+}
+
+.pub-card:hover .pub-card-img img {
+    transform: scale(1.05);
+}
+
+.pub-card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pub-card-content > p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.pub-entry {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border-gray);
+    transition: var(--transition);
+}
+
+.pub-entry:last-child {
+    border-bottom: none;
+}
+
+.pub-entry:hover {
+    padding-left: 0.5rem;
+    background: rgba(30, 111, 78, 0.03);
+    border-radius: 4px;
+}
+
+.pub-entry-title {
+    font-size: 1rem;
+    color: #444;
+    transition: var(--transition);
+}
+
+.pub-entry:hover .pub-entry-title {
+    color: var(--primary-blue);
+}
+
+.pub-entry-year {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--primary-blue);
+    padding: 0.15rem 0.6rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.cta-button {
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ==================== AWARDS ==================== */
+.awards-section {
+    background: var(--white);
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.award-card {
+    background: var(--white);
+    border: 2px solid var(--border-gray);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+
+.award-card:hover {
+    border-color: var(--primary-blue);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.award-card h3 {
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.award-card .award-source {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.award-card .award-amount {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-top: 0.3rem;
+}
+
+.award-tag {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.6rem;
+}
+
+.award-tag.fellowship-tag {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.award-tag.grant-tag {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+.award-tag.travel-tag {
+    background: #FFF3E0;
+    color: #E65100;
+}
+
+.award-tag.scholarship-tag {
+    background: #F3E5F5;
+    color: #7B1FA2;
+}
+
+/* ==================== CERTIFICATIONS ==================== */
+.cert-section {
+    background: var(--light-gray);
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cert-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border-left: 4px solid var(--accent-blue);
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.cert-card h4 {
+    font-size: 1rem;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.cert-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cert-card ul li {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0.3rem 0;
+    padding-left: 1.3rem;
+    position: relative;
+}
+
+.cert-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
+/* ==================== PUB HERO RESPONSIVE ==================== */
+@media (max-width: 850px) {
+    .publication-hero {
+        min-height: 320px;
+        padding: 4rem 1.5rem;
+    }
+
+    .publication-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .publication-hero-content > p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .pub-card {
+        grid-template-columns: 1fr;
+    }
+
+    .pub-card:nth-of-type(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .pub-card:nth-of-type(even) .pub-card-img {
+        grid-column: 1;
+    }
+
+    .pub-card:nth-of-type(even) .pub-card-content {
+        grid-column: 1;
+    }
+
+    .pub-card-img {
+        min-height: 200px;
+    }
+
+    .pub-card-content {
+        padding: 1.5rem;
+    }
+
+    .publication-hero {
+        min-height: 280px;
+        padding: 3rem 1.2rem;
+    }
+
+    .publication-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .publication-hero-content > p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .pub-hero-badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr;
     }
 }
 
