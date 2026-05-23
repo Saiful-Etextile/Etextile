@@ -242,6 +242,7 @@ nav a.active::after {
     display: block;
     margin: 0 auto;
     border: 3px solid rgba(255,255,255,0.2);
+    filter: brightness(1.15) contrast(1.05);
 }
 
 .about-hero-badge {
@@ -305,6 +306,7 @@ nav a.active::after {
 .about-section {
     background: var(--light-gray);
     padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .about-card {
@@ -483,14 +485,15 @@ nav a.active::after {
 /* ==================== LEADERSHIP SECTION ==================== */
 .leadership-section {
     background: var(--white);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 /* ==================== CURRENT EXPERTISE ==================== */
 .expertise-section {
     background: var(--light-gray);
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .expertise-grid {
