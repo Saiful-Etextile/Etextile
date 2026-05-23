@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ==================== HEADER ==================== -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo" style="text-decoration: none; color: white;">
@@ -18,7 +17,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="media.html">Media</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -32,98 +31,183 @@
         </div>
     </header>
 
-    <!-- ==================== PROJECTS CONTENT ==================== -->
-    <section class="projects-section page-section">
-        <div class="projects-container">
-            <h1 class="section-title">Featured Research Projects</h1>
-            <p class="section-subtitle" style="text-align: center; margin-bottom: 3rem; color: #666;">Innovative solutions in smart textiles and biomedical applications</p>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-icon">😴</div>
-                    <div class="project-info">
-                        <h3>Sleep Apnea Monitoring & Treatment</h3>
-                        <p>Flagship biomedical textile project developing wearable solutions for real-time sleep apnea monitoring and therapeutic intervention through smart textiles. This project combines advanced fabric engineering with physiological monitoring capabilities.</p>
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="media-hero-badge">Research Projects</span>
+            <h1>Driving Innovation in Smart Textiles &amp; Protective Materials</h1>
+            <p>Leading interdisciplinary research spanning healthcare wearables, protective textiles, functional yarns, and advanced materials — funded by NSERC, CIHR, Mitacs, and more.</p>
+            <div class="media-stats">
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Research Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Completed Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Funding Partners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proj-section page-section">
+
+        <!-- Active Projects -->
+        <div class="proj-category">
+            <h2 class="media-category-title">Active Projects</h2>
+
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Sleep apnea monitoring textile">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status active-tag">Active</span>
+                    <span class="proj-timeline">2024 – Present</span>
+                    <h3>Sleep Apnea Monitoring &amp; Treatment</h3>
+                    <p>Flagship biomedical textile project developing wearable solutions for real-time sleep apnea monitoring and therapeutic intervention through smart textiles. Combines advanced fabric engineering with physiological monitoring capabilities.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge nserc-tag">NSERC CREATE</span>
+                        <span class="proj-funding-badge nserc-tag">NSERC CPRA</span>
+                        <span class="proj-funding-badge cihr-tag">CIHR Subgrant</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-icon">🔌</div>
-                    <div class="project-info">
-                        <h3>Knitted & Embroidered Dry Electrodes</h3>
-                        <p>Development of textile-based electrodes using flat-bed knitting and embroidery machines for comfortable, integrated physiological monitoring. These electrodes enable long-term, non-invasive biometric sensing directly embedded in wearable garments.</p>
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Thermoregulating textile prototype">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status active-tag">Active</span>
+                    <span class="proj-timeline">2025 – Present</span>
+                    <h3>Thermoregulating Smart Textiles</h3>
+                    <p>Advanced textile prototypes capable of real-time skin temperature monitoring and adaptive thermal regulation for healthcare applications. Ideal for patients requiring continuous thermal management in clinical and home settings.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge transformhf-tag">TransformHF</span>
+                        <span class="proj-funding-badge nserc-tag">NSERC</span>
+                        <span class="proj-funding-badge mitacs-tag">Mitacs</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-icon">🌡️</div>
-                    <div class="project-info">
-                        <h3>Thermoregulating Smart Textiles</h3>
-                        <p>Advanced textile prototypes capable of real-time skin temperature monitoring and adaptive thermal regulation for healthcare applications. Ideal for patients requiring continuous thermal management and temperature monitoring.</p>
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=600&q=80" alt="Respiratory monitoring textile">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status active-tag">Active</span>
+                    <span class="proj-timeline">2025 – Present</span>
+                    <h3>Respiratory Monitoring Textiles</h3>
+                    <p>Smart fabrics designed for continuous respiratory rate and breathing pattern monitoring with clinical-grade accuracy. Mentoring PhD and MSc students on developing innovative textile-based respiratory sensors for healthcare settings.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge mitacs-tag">Mitacs</span>
+                    </div>
+                    <ul class="proj-highlights">
+                        <li>Industry partnership</li>
+                        <li>Student mentorship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completed Projects -->
+        <div class="proj-category">
+            <h2 class="media-category-title">Completed Projects</h2>
+
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1590650151155-34c2b4ba0b4b?w=600&q=80" alt="Functional yarn manufacturing">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status completed-tag">Completed</span>
+                    <span class="proj-timeline">2024</span>
+                    <h3>Functional Yarns via Additive Manufacturing</h3>
+                    <p>Developed functional yarns using additive manufacturing technology and innovative extrusion processes for the NSERC-NFRF funded smartwear revolution project. Created 3D-printed flexible composites for wearable textiles and soft robotics applications.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge nfrf-tag">NFRF — Transformation</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-icon">💨</div>
-                    <div class="project-info">
-                        <h3>Respiratory Monitoring Textiles</h3>
-                        <p>Smart fabrics designed for continuous respiratory rate and breathing pattern monitoring with clinical-grade accuracy for healthcare settings. Successfully mentored PhD and MSc students on developing these innovative textiles.</p>
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1617952377420-2e3d165f6832?w=600&q=80" alt="Graphene sensor">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status completed-tag">Completed</span>
+                    <span class="proj-timeline">2020 – 2024</span>
+                    <h3>Graphene-Based End-of-Life Sensors</h3>
+                    <p>Novel moisture and thermal sensors using laser-induced graphene technology for textile degradation monitoring and performance assessment. Developed end-of-life detection methods for protective clothing with industry partners.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge nserc-tag">NSERC</span>
+                        <span class="proj-funding-badge mitacs-tag">Mitacs</span>
+                    </div>
+                    <ul class="proj-highlights">
+                        <li>Industry partnership</li>
+                        <li>Published in ECPC proceedings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80" alt="Fiber analysis laboratory">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status completed-tag">Completed</span>
+                    <span class="proj-timeline">2019 – 2024</span>
+                    <h3>High-Performance Fiber Analysis</h3>
+                    <p>Comprehensive aging analysis of para-aramid, meta-aramid, and other high-performance fibers for firefighters' protective clothing reliability. Developed accelerated aging programs simulating real service conditions with industry partners DuPont and LION Protects.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge nserc-tag">NSERC</span>
+                    </div>
+                    <ul class="proj-highlights">
+                        <li>Industry partnership</li>
+                        <li>3 peer-reviewed publications</li>
+                        <li>Media coverage (UofA Folio)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&q=80" alt="Nanofibre membrane">
+                </div>
+                <div class="proj-card-content">
+                    <span class="proj-status completed-tag">Completed</span>
+                    <span class="proj-timeline">2020 – 2023</span>
+                    <h3>Chemical &amp; Biological Self-Detoxifying Membranes (COMFORTS)</h3>
+                    <p>Development of nanofibre membranes capable of chemical and biological detoxification. Comprehensive material characterization and performance testing for protective applications through various microscopy and spectroscopy techniques.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge dnd-tag">DND</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-icon">🔬</div>
-                    <div class="project-info">
-                        <h3>Graphene-Based End-of-Life Sensors</h3>
-                        <p>Novel moisture and thermal sensors using laser-induced graphene technology for textile degradation monitoring and performance assessment. Industry partners include DuPont, Filspec, Davey Textile Solutions Inc., and Innotex.</p>
-                    </div>
+            <div class="proj-card">
+                <div class="proj-card-img">
+                    <img src="https://images.unsplash.com/photo-1586339949916-3e5457d58f1c?w=600&q=80" alt="IR camouflage material">
                 </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-icon">🛡️</div>
-                    <div class="project-info">
-                        <h3>High-Performance Fiber Analysis</h3>
-                        <p>Comprehensive aging analysis of para-aramid, meta-aramid, and other high-performance fibers for firefighters' protective clothing reliability. Developed accelerated aging programs simulating real service conditions with industry partners DuPont and LION Protects.</p>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="project-card">
-                    <div class="project-icon">🔐</div>
-                    <div class="project-info">
-                        <h3>IR Camouflage for Personal Protective Equipment</h3>
-                        <p>Identified and characterized potential polymeric materials for product development. Explored innovative lamination techniques for fabrication and developed functional prototypes for specialized protective applications.</p>
-                    </div>
-                </div>
-
-                <!-- Project 8 -->
-                <div class="project-card">
-                    <div class="project-icon">🧽</div>
-                    <div class="project-info">
-                        <h3>Chemical & Biological Self-Detoxifying Membranes (COMFORTS)</h3>
-                        <p>Development of nanofibre membranes capable of chemical and biological detoxification. Comprehensive material characterization and performance testing for protective applications through various microscopy and spectroscopy techniques.</p>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="project-card">
-                    <div class="project-icon">🧵</div>
-                    <div class="project-info">
-                        <h3>Functional Yarns via Additive Manufacturing</h3>
-                        <p>Developed functional yarns using additive manufacturing technology and innovative extrusion processes for NSERC-NFRF funded smartwear revolution project. Created 3D-printed flexible composites for wearable textiles and soft robotics applications.</p>
+                <div class="proj-card-content">
+                    <span class="proj-status completed-tag">Completed</span>
+                    <span class="proj-timeline">2021 – 2022</span>
+                    <h3>IR Camouflage for Personal Protective Equipment</h3>
+                    <p>Identified and characterized potential polymeric materials for product development. Explored innovative lamination techniques for fabrication and developed functional prototypes for specialized military protective applications.</p>
+                    <div class="proj-funding">
+                        <span class="proj-funding-badge dnd-tag">IDEAs — DND</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
