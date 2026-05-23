@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ==================== HEADER ==================== -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo" style="text-decoration: none; color: white;">
@@ -16,7 +15,7 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="publications.html">Publications</a></li>
@@ -32,27 +31,148 @@
         </div>
     </header>
 
-    <!-- ==================== HERO SECTION ==================== -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Saiful Hoque, Ph.D.</h1>
-            <p class="hero-subtitle">President — Institute of Textile Science | Postdoctoral Fellow | Smart Textile Innovation Leader | Biomedical Textiles Researcher</p>
-            <p class="hero-description">$400K+ in Competitive Grants Secured | Theme Editor — EMBC 2026 | Sleep Apnea Solutions | Cross-Border Collaborator</p>
-            <div class="hero-media">
-                <video class="hero-video" controls muted autoplay loop playsinline>
+    <section class="home-hero">
+        <div class="home-hero-content">
+            <span class="media-hero-badge">Saiful Hoque, Ph.D.</span>
+            <h1>Smart Textiles for Healthcare &amp; Protective Applications</h1>
+            <p>President — Institute of Textile Science | Postdoctoral Fellow at UofT &amp; UHN | Theme Editor — EMBC 2026 | Advancing textile-based solutions for sleep apnea, thermoregulation, and protective materials</p>
+            <div class="media-stats">
+                <div class="stat-item">
+                    <span class="stat-number">$460K+</span>
+                    <span class="stat-label">Fellowships &amp; Awards</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$400K+</span>
+                    <span class="stat-label">Lab Grants Secured</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Research Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Publications</span>
+                </div>
+            </div>
+            <div class="home-hero-video">
+                <video controls muted autoplay loop playsinline>
                     <source src="videos/hero.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
                 </video>
             </div>
-            <p class="hero-location">📍 Toronto, Ontario, Canada</p>
-            <div class="hero-buttons">
+            <div class="home-hero-buttons">
                 <a href="projects.html" class="cta-button">View My Projects</a>
                 <a href="about.html" class="cta-button" style="background: rgba(255,255,255,0.2); border: 2px solid white;">Learn About Me</a>
             </div>
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
+    <section class="home-featured">
+        <h2>Featured Projects</h2>
+        <div class="home-featured-grid">
+            <div class="home-card">
+                <img class="home-card-img" src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=400&q=80" alt="Sleep apnea monitoring">
+                <div class="home-card-body">
+                    <span class="proj-status active-tag">Active</span>
+                    <h3>Sleep Apnea Monitoring &amp; Treatment</h3>
+                    <p>Wearable textile solutions for real-time sleep apnea monitoring and therapeutic intervention.</p>
+                    <a href="projects.html" class="home-card-link">Learn more &rarr;</a>
+                </div>
+            </div>
+            <div class="home-card">
+                <img class="home-card-img" src="https://images.unsplash.com/photo-1762955911235-adeb8838dcf1?w=400&q=80" alt="Thermoregulating textiles">
+                <div class="home-card-body">
+                    <span class="proj-status active-tag">Active</span>
+                    <h3>Thermoregulating Smart Textiles</h3>
+                    <p>Adaptive textile prototypes for real-time skin temperature monitoring and thermal regulation.</p>
+                    <a href="projects.html" class="home-card-link">Learn more &rarr;</a>
+                </div>
+            </div>
+            <div class="home-card">
+                <img class="home-card-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80" alt="CardioRespiratory monitoring">
+                <div class="home-card-body">
+                    <span class="proj-status active-tag">Active</span>
+                    <h3>CardioRespiratory Monitoring Textiles</h3>
+                    <p>Smart fabrics for continuous respiratory and cardiac monitoring with clinical-grade accuracy.</p>
+                    <a href="projects.html" class="home-card-link">Learn more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-featured" style="background: var(--light-gray); padding-top: 4rem; padding-bottom: 4rem; max-width: none;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2>Latest Publications</h2>
+            <div class="home-featured-grid">
+                <div class="home-card">
+                    <img class="home-card-img" src="images/01.png" alt="Smart Textiles 6G" style="object-fit: contain; background: #f0f0f0;">
+                    <div class="home-card-body">
+                        <span class="home-card-tag" style="background: #e3f2fd; color: #1565c0;">2026</span>
+                        <h3>Smart Textiles for 6G</h3>
+                        <p>Wearable textile antennas for 6G wireless body-centric networks.</p>
+                        <a href="images/Smart Textiles for 6G_ A Review_ A Review of Wearable Textile Antennas for 6G Wireless Body-Centric Networks.pdf" class="home-card-link" target="_blank">View PDF &rarr;</a>
+                    </div>
+                </div>
+                <div class="home-card">
+                    <img class="home-card-img" src="images/03.png" alt="Fiber aging" style="object-fit: contain; background: #f0f0f0;">
+                    <div class="home-card-body">
+                        <span class="home-card-tag" style="background: #e8f5e9; color: #2e7d32;">2024</span>
+                        <h3>High-Performance Fiber Aging</h3>
+                        <p>Multi-scale analysis of aged para-aramid and meta-aramid fibers for protective clothing.</p>
+                        <a href="https://onlinelibrary.wiley.com/doi/10.1002/app.55776" class="home-card-link" target="_blank">View on Wiley &rarr;</a>
+                    </div>
+                </div>
+                <div class="home-card">
+                    <img class="home-card-img" src="images/04.png" alt="Textile manufacturing" style="object-fit: contain; background: #f0f0f0;">
+                    <div class="home-card-body">
+                        <span class="home-card-tag" style="background: #fff3e0; color: #e65100;">2025</span>
+                        <h3>Novel Processing of Yarns</h3>
+                        <p>Innovative melt-electrowriting and 3D printing for functional yarn fabrication.</p>
+                        <a href="https://www.mdpi.com/2073-4360/17/6/743" class="home-card-link" target="_blank">View on MDPI &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-featured">
+        <h2>Media &amp; Podcasts</h2>
+        <div class="home-featured-grid">
+            <div class="home-card">
+                <img class="home-card-img" src="images/media-01.png" alt="Firefighter protective clothing research">
+                <div class="home-card-body">
+                    <span class="home-card-tag" style="background: #fce4ec; color: #c62828;">Feature</span>
+                    <h3>UofA Engineering Magazine</h3>
+                    <p>Research on aging of firefighters' protective clothing featured in the University of Alberta's engineering magazine.</p>
+                    <a href="media.html" class="home-card-link">View media &rarr;</a>
+                </div>
+            </div>
+            <div class="home-card">
+                <img class="home-card-img" src="images/media-02.png" alt="Breakthrough research">
+                <div class="home-card-body">
+                    <span class="home-card-tag" style="background: #fce4ec; color: #c62828;">Feature</span>
+                    <h3>Breakthrough Research on Protective Wear</h3>
+                    <p>Media coverage of innovative approaches to extending the lifespan of firefighter turnout gear.</p>
+                    <a href="media.html" class="home-card-link">View media &rarr;</a>
+                </div>
+            </div>
+            <div class="home-card">
+                <img class="home-card-img" src="images/cabhi-spotlight.jpg" alt="CABHI Science Collaborative Spotlight">
+                <div class="home-card-body">
+                    <span class="home-card-tag" style="background: #f3e5f5; color: #7b1fa2;">Podcast</span>
+                    <h3>CABHI Science Collaborative</h3>
+                    <p>Spotlight discussion on collaborative research in aging and technology for healthcare innovation.</p>
+                    <a href="media.html" class="home-card-link">View media &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-cta">
+        <h2>Let's Collaborate</h2>
+        <p>Interested in smart textile research, collaboration, or speaking engagements? I'd love to connect.</p>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
+    </section>
+
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -71,6 +191,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
+                    <li><a href="media.html">Media</a></li>
                 </ul>
             </div>
 
@@ -95,437 +216,11 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Saiful Hoque, Ph.D. All rights reserved.</p>
+            <p>&copy; 2026 Saiful Hoque, Ph.D. All rights reserved.</p>
             <p>Advancing Smart Textile Innovation for Healthcare 💡</p>
         </div>
     </footer>
 
-    <!-- ==================== STYLES ==================== -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-blue: #1E6F4E;
-            --light-blue: #E6F7EC;
-            --dark-blue: #164B36;
-            --accent-blue: #4CAF7F;
-            --white: #ffffff;
-            --light-gray: #f5f5f5;
-            --dark-gray: #333333;
-            --border-gray: #e0e0e0;
-            --success-green: #4caf50;
-            --text-color: #333333;
-            --shadow-sm: 0 2px 8px rgba(30, 111, 78, 0.1);
-            --shadow-md: 0 8px 24px rgba(30, 111, 78, 0.15);
-            --transition: all 0.3s ease;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            overflow-x: hidden;
-        }
-
-        /* ==================== HEADER & NAVIGATION ==================== */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
-            color: var(--white);
-            z-index: 1000;
-            box-shadow: var(--shadow-md);
-            transition: var(--transition);
-        }
-
-        header.scrolled {
-            padding: 0.5rem 0;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            position: relative;
-            transition: var(--transition);
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--white);
-            transition: var(--transition);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--white);
-            border-radius: 3px;
-            transition: var(--transition);
-        }
-
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
-            }
-
-            nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
-                max-height: 0;
-                overflow: hidden;
-                transition: var(--transition);
-            }
-
-            nav.active {
-                max-height: 400px;
-                padding: 1rem 0;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 0;
-                padding: 0 2rem;
-            }
-
-            nav a {
-                padding: 0.5rem 0;
-                display: block;
-            }
-
-            nav a::after {
-                display: none;
-            }
-
-            .menu-toggle.active span:nth-child(1) {
-                transform: rotate(45deg) translate(8px, 8px);
-            }
-
-            .menu-toggle.active span:nth-child(2) {
-                opacity: 0;
-            }
-
-            .menu-toggle.active span:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -7px);
-            }
-        }
-
-        /* ==================== HERO SECTION ==================== */
-        .hero {
-            margin-top: 70px;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
-            color: var(--white);
-            padding: 6rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -5%;
-            width: 400px;
-            height: 400px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 50%;
-            animation: float 8s ease-in-out infinite;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            margin: 0 auto;
-            animation: slideInDown 0.8s ease-out;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            line-height: 1.2;
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .hero-description {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-        }
-
-        .hero-location {
-            font-size: 1.1rem;
-            margin-top: 2rem;
-            opacity: 0.85;
-        }
-
-        .hero-media {
-            margin: 2rem auto 0;
-            max-width: 860px;
-        }
-
-        .hero-video {
-            width: 100%;
-            height: auto;
-            border-radius: 24px;
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-            display: block;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--white);
-            color: var(--primary-blue);
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: var(--transition);
-            box-shadow: var(--shadow-md);
-            border: 2px solid var(--white);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-            background: var(--light-blue);
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 4rem 1.5rem;
-                margin-top: 60px;
-                min-height: auto;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .cta-button {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-
-        /* ==================== FOOTER ==================== */
-        footer {
-            background: var(--dark-blue);
-            color: var(--white);
-            padding: 3rem 2rem;
-            margin-top: 5rem;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 0.7rem;
-        }
-
-        .footer-section a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .footer-section a:hover {
-            color: var(--white);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-decoration: none;
-            transition: var(--transition);
-            font-size: 1.2rem;
-        }
-
-        .social-icon:hover {
-            background: var(--accent-blue);
-            transform: translateY(-3px);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-        }
-
-        .footer-bottom p {
-            opacity: 0.8;
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            footer {
-                padding: 2rem 1.5rem;
-            }
-
-            .footer-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* ==================== ANIMATIONS ==================== */
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        @keyframes slideInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-
-    <!-- ==================== JAVASCRIPT ==================== -->
     <script src="scripts.js"></script>
 </body>
 </html>
