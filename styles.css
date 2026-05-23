@@ -934,11 +934,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background:
-        linear-gradient(135deg, rgba(30, 111, 78, 0.85), rgba(13, 74, 48, 0.92)),
-        url('images/media-hero-bg.jpg');
-    background-size: cover;
-    background-position: center 30%;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #0d4a30 50%, var(--accent-blue) 100%);
     overflow: hidden;
     padding: 5rem 2rem;
 }
