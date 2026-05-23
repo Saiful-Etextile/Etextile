@@ -477,7 +477,7 @@ nav a.active::after {
 
 /* ==================== CURRENT EXPERTISE ==================== */
 .expertise-section {
-    background: var(--white);
+    background: var(--light-gray);
 }
 
 .expertise-grid {
