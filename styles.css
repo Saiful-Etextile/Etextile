@@ -1127,11 +1127,12 @@ footer {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .stat-item {
     text-align: center;
+    white-space: nowrap;
 }
 
 .stat-number {
@@ -1436,6 +1437,21 @@ footer {
 
     .stat-label {
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .media-stats {
+        gap: 0.8rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
     }
 }
 
