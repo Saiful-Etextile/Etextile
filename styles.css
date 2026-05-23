@@ -201,278 +201,287 @@ nav a.active::after {
     border-radius: 2px;
 }
 
-/* ==================== OLD ABOUT (LEGACY) ==================== */
-
 /* ==================== ABOUT HERO ==================== */
 .about-hero {
-    background: var(--white);
-    padding-bottom: 2rem;
-}
-
-.about-hero-content {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-hero-image img {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
-    display: block;
-    margin: 0 auto;
-}
-
-.about-hero-text h1 {
-    font-size: 3.2rem;
-    color: var(--dark-blue);
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.about-tagline {
-    font-size: 1.35rem;
-    color: var(--accent-blue);
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    line-height: 1.4;
-}
-
-/* ==================== LEADERSHIP SPOTLIGHT ==================== */
-.leadership-spotlight {
-    background: var(--light-gray);
+    margin-top: 70px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #0d4a30 50%, var(--accent-blue) 100%);
     padding: 4rem 2rem;
-}
-
-.leadership-spotlight .section-title {
-    margin-bottom: 2.5rem;
-}
-
-.leadership-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.leadership-card {
-    background: var(--white);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    border-top: 4px solid var(--primary-blue);
-}
-
-.leadership-card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-md);
-}
-
-.leadership-card-logo {
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--light-blue), rgba(76, 175, 80, 0.08));
-}
-
-.leadership-card-logo img {
-    max-height: 140px;
-    max-width: 85%;
-    object-fit: contain;
-}
-
-.leadership-card-body {
-    padding: 1.8rem 2rem 2rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.leadership-card-role {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.3rem 1rem;
-    border-radius: 50px;
-    background: var(--light-blue);
-    color: var(--primary-blue);
-    margin-bottom: 0.8rem;
-    align-self: flex-start;
-}
-
-.leadership-card-body h3 {
-    font-size: 1.5rem;
-    color: var(--dark-blue);
-    margin-bottom: 0.6rem;
-    line-height: 1.3;
-}
-
-.leadership-card-body p {
-    font-size: 1.05rem;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
-    flex: 1;
-}
-
-.leadership-card-link {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: var(--transition);
-}
-
-.leadership-card-link:hover {
-    color: var(--accent-blue);
-    gap: 0.6rem;
-}
-
-@media (max-width: 768px) {
-    .leadership-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .leadership-card-logo {
-        height: 160px;
-    }
-
-    .leadership-card-logo img {
-        max-height: 100px;
-    }
-
-    .leadership-card-body h3 {
-        font-size: 1.3rem;
-    }
-
-    .leadership-card-logo img {
-        max-height: 70px;
-    }
-
-    .leadership-card-body {
-        padding: 1.5rem;
-    }
-
-    .leadership-card-body h3 {
-        font-size: 1.2rem;
-    }
-}
-
-.about-intro {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-/* ==================== WHAT I DO ==================== */
-.what-i-do-section {
-    background: var(--light-gray);
-}
-
-.what-i-do-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.what-i-do-card {
-    background: var(--white);
-    border-radius: 15px;
-    padding: 2.5rem 2rem;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
     position: relative;
     overflow: hidden;
 }
 
-.what-i-do-card::before {
+.about-hero::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(76, 175, 128, 0.15) 0%, transparent 50%);
+    pointer-events: none;
 }
 
-.what-i-do-card:hover {
-    transform: translateY(-6px);
+.about-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero-image img {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    display: block;
+    margin: 0 auto;
+    border: 3px solid rgba(255,255,255,0.2);
+}
+
+.about-hero-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.about-hero-text h1 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.15;
+}
+
+.about-hero-text > p {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about-hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.about-hero-stats .stat-item {
+    text-align: left;
+}
+
+.about-hero-stats .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-hero-stats .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+}
+
+/* ==================== ABOUT SECTION ==================== */
+.about-section {
+    background: var(--light-gray);
+}
+
+.about-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
     box-shadow: var(--shadow-md);
 }
 
-.what-i-do-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
+.about-card-img {
+    height: 100%;
+    min-height: 260px;
     overflow: hidden;
-    margin-bottom: 1.2rem;
-    transition: var(--transition);
+    position: relative;
 }
 
-.what-i-do-img img {
+.about-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
 }
 
-.what-i-do-card:hover .what-i-do-img img {
-    transform: scale(1.08);
+.about-card:hover .about-card-img img {
+    transform: scale(1.05);
 }
 
-.what-i-do-card h3 {
-    font-size: 1.35rem;
+.about-card-img-logo {
+    background: linear-gradient(135deg, var(--light-blue), rgba(76, 175, 80, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about-card-img-logo img {
+    max-height: 120px;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.about-card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-card-tag {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.7rem;
+    align-self: flex-start;
+}
+
+.card-tag-research {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.card-tag-clinical {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+.card-tag-leadership {
+    background: #FFF3E0;
+    color: #E65100;
+}
+
+.card-tag-president {
+    background: #E8EAF6;
+    color: #283593;
+}
+
+.card-tag-editor {
+    background: #F3E5F5;
+    color: #7B1FA2;
+}
+
+.about-card-content h3 {
+    font-size: 1.4rem;
     color: var(--dark-blue);
+    margin-bottom: 0.3rem;
+    line-height: 1.3;
+}
+
+.about-card-source {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.about-card-content p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
     margin-bottom: 0.8rem;
 }
 
-.what-i-do-card p {
-    font-size: 1.05rem;
-    color: #555;
-    line-height: 1.7;
-}
-
-.what-i-do-card ul {
+.about-card-content ul {
     list-style: none;
     padding: 0;
-    margin: 0.8rem 0 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem 1rem;
 }
 
-.what-i-do-card ul li {
-    font-size: 1rem;
+.about-card-content ul li {
+    font-size: 0.9rem;
     color: #555;
     line-height: 1.6;
-    padding: 0.3rem 0 0.3rem 1.2rem;
+    padding: 0.2rem 0 0.2rem 1.1rem;
     position: relative;
 }
 
-.what-i-do-card ul li::before {
+.about-card-content ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0.65rem;
+    top: 0.6rem;
     width: 5px;
     height: 5px;
     background: var(--accent-blue);
     border-radius: 50%;
+}
+
+.about-card-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+}
+
+.about-card-link:hover {
+    color: var(--accent-blue);
+    gap: 0.6rem;
+}
+
+/* Alternating layout */
+.about-card:nth-of-type(even) {
+    grid-template-columns: 1fr 320px;
+}
+
+.about-card:nth-of-type(even) .about-card-img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.about-card:nth-of-type(even) .about-card-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* ==================== LEADERSHIP SECTION ==================== */
+.leadership-section {
+    background: var(--white);
 }
 
 /* ==================== CURRENT EXPERTISE ==================== */
@@ -487,21 +496,22 @@ nav a.active::after {
     margin-top: 3rem;
 }
 
-.expertise-category {
-    background: linear-gradient(135deg, var(--light-blue), rgba(255, 255, 255, 0.5));
-    border: 2px solid var(--border-gray);
+.expertise-card {
+    background: var(--white);
     border-radius: 15px;
     padding: 2rem;
+    box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
 
-.expertise-category:hover {
+.expertise-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
     border-color: var(--accent-blue);
-    box-shadow: var(--shadow-sm);
 }
 
-.expertise-category h3 {
-    font-size: 1.25rem;
+.expertise-card h3 {
+    font-size: 1.2rem;
     color: var(--dark-blue);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -516,13 +526,13 @@ nav a.active::after {
 }
 
 .expertise-tag {
-    background: var(--white);
+    background: var(--light-blue);
     color: var(--primary-blue);
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1.1rem;
     border-radius: 50px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid var(--border-gray);
+    border: 1px solid transparent;
     transition: var(--transition);
 }
 
@@ -535,25 +545,23 @@ nav a.active::after {
 
 /* ==================== RESPONSIVE ABOUT ==================== */
 @media (max-width: 1024px) {
-    .what-i-do-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .about-hero-content {
+        grid-template-columns: 220px 1fr;
+        gap: 3rem;
     }
 
-    .about-hero-content {
-        grid-template-columns: 250px 1fr;
-        gap: 3rem;
+    .about-card {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .about-card:nth-of-type(even) {
+        grid-template-columns: 1fr 280px;
     }
 }
 
 @media (max-width: 768px) {
-    .page-section {
+    .about-hero {
         padding: 3rem 1.5rem;
-        margin-top: 60px;
-    }
-
-    .section-title {
-        font-size: 2rem;
     }
 
     .about-hero-content {
@@ -567,24 +575,59 @@ nav a.active::after {
     }
 
     .about-hero-image img {
-        max-width: 220px;
-        aspect-ratio: 3/4;
+        max-width: 200px;
     }
 
     .about-hero-text h1 {
         font-size: 2.2rem;
     }
 
-    .about-tagline {
+    .about-hero-text > p {
+        font-size: 1rem;
+    }
+
+    .about-hero-stats {
+        justify-content: center;
+    }
+
+    .about-hero-stats .stat-item {
+        text-align: center;
+    }
+
+    .about-card {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card:nth-of-type(even) {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card:nth-of-type(even) .about-card-img {
+        grid-column: 1;
+    }
+
+    .about-card:nth-of-type(even) .about-card-content {
+        grid-column: 1;
+    }
+
+    .about-card-img {
+        min-height: 200px;
+    }
+
+    .about-card-content {
+        padding: 1.5rem;
+    }
+
+    .about-card-content h3 {
         font-size: 1.2rem;
+    }
+
+    .about-card-content ul {
+        grid-template-columns: 1fr;
     }
 
     .expertise-grid {
         grid-template-columns: 1fr;
-    }
-
-    .what-i-do-card {
-        padding: 2rem 1.5rem;
     }
 }
 
