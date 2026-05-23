@@ -2362,6 +2362,25 @@ footer {
     line-height: 1.7;
 }
 
+.cta-button-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    border: 2px solid rgba(255,255,255,0.8);
+}
+
+.cta-button-outline:hover {
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.15);
+    border-color: var(--white);
+}
+
 .home-cta .cta-button {
     display: inline-block;
     background: var(--white);
