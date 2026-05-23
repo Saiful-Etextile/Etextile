@@ -205,7 +205,7 @@ nav a.active::after {
 .about-hero {
     margin-top: 70px;
     background: linear-gradient(135deg, var(--primary-blue) 0%, #0d4a30 50%, var(--accent-blue) 100%);
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -304,6 +304,7 @@ nav a.active::after {
 /* ==================== ABOUT SECTION ==================== */
 .about-section {
     background: var(--light-gray);
+    padding-top: 2rem;
 }
 
 .about-card {
@@ -482,11 +483,14 @@ nav a.active::after {
 /* ==================== LEADERSHIP SECTION ==================== */
 .leadership-section {
     background: var(--white);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* ==================== CURRENT EXPERTISE ==================== */
 .expertise-section {
     background: var(--light-gray);
+    padding-top: 2rem;
 }
 
 .expertise-grid {
@@ -528,9 +532,9 @@ nav a.active::after {
 .expertise-tag {
     background: var(--light-blue);
     color: var(--primary-blue);
-    padding: 0.5rem 1.1rem;
+    padding: 0.6rem 1.3rem;
     border-radius: 50px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -561,7 +565,7 @@ nav a.active::after {
 
 @media (max-width: 768px) {
     .about-hero {
-        padding: 3rem 1.5rem;
+        padding: 2rem 1.5rem;
     }
 
     .about-hero-content {
