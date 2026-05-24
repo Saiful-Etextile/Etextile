@@ -150,12 +150,17 @@ nav a.active::after {
     }
 
     nav a {
-        padding: 0.5rem 0;
+        padding: 0.65rem 0;
         display: block;
     }
 
     nav a::after {
         display: none;
+    }
+
+    nav a.active {
+        opacity: 0.85;
+        text-decoration: underline;
     }
 
     .menu-toggle.active span:nth-child(1) {
@@ -1127,12 +1132,11 @@ footer {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .stat-item {
     text-align: center;
-    white-space: nowrap;
 }
 
 .stat-number {
@@ -2457,10 +2461,106 @@ footer {
         align-items: center;
     }
 
-    .home-hero-buttons .cta-button {
+.home-hero-buttons .cta-button,
+    .home-hero-buttons .cta-button-outline {
         width: 100%;
         max-width: 300px;
     }
+
+    .home-featured {
+        padding: 2.5rem 1.2rem;
+    }
+
+    .home-featured h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home-card-img {
+        height: 160px;
+    }
+
+    .home-cta {
+        padding: 3rem 1.5rem;
+    }
+
+    .home-cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .media-stats {
+        gap: 0.8rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+        letter-spacing: 0.5px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-hero-text > p {
+        font-size: 0.9rem;
+    }
+
+    .about-hero-stats .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .about-hero-stats .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .contact-title {
+        font-size: 1.6rem;
+    }
+
+    .publication-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .media-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .pub-hero-badge,
+    .media-hero-badge {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .media-intro {
+        font-size: 0.9rem;
+    }
+
+    .pub-card-content > p {
+        font-size: 0.9rem;
+    }
+
+    .expertise-tag {
+        font-size: 0.85rem;
+    }
+}
 
     .home-featured {
         padding: 2.5rem 1.2rem;
